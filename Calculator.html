@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+            button-align: center;
+            background-color: rgb(0, 227, 239);
+        }
+        input, output {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1.5em;
+            font-family: 1.1em Arial, sans-serif;
+        }
+        button {
+            margin: 4px;
+            padding: 10px 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <a = "https://www.calculator.net/">CALCULATOR</a>
+    <input type="number" id="num1" enabled>
+    <input type="number" id="num2" enabled>
+    <output type="result" num1 + num2 id="result"></output>
+    <button onclick="document.getElementById('result').value = parseFloat(document.getElementById('num1').value) + parseFloat(document.getElementById('num2').value)">+</button >
+    <button onclick="document.getElementById('result').value = parseFloat(document.getElementById('num1').value) - parseFloat(document.getElementById('num2').value)">-</button >
+    <button onclick="document.getElementById('result').value = parseFloat(document.getElementById('num1').value) * parseFloat(document.getElementById('num2').value)">*</button >
+    <button onclick="document.getElementById('result').value = parseFloat(document.getElementById('num1').value) / parseFloat(document.getElementById('num2').value)">/</button >
+    <button onclick="document.getElementById('result').value = parseFloat(document.getElementById('num1').value) % parseFloat(document.getElementById('num2').value)">%</button >
+</body>
+</html>
